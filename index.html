@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Your Website Title</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="font-awesome.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Your content goes here -->
+    
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+        <div class="col-xl-9 col-lg-10 col-md-11">
+        <div class="card rounded-0 b-0">
+        <div class="card-header">
+        <div class="row d-flex justify-content-between">
+        <div class="">
+        <h2>Nous sommes ravis de vous accompagner dans le voyage passionnant de la découverte de votre orientation académique !!! </h2>
+        <h4><br>Cette série de questions a nous permettre de mieux comprendre vos aspirations, vos compétences et vos intérêts.</h4>
+        </div>
+        
+        </div>
+        </div>
+        <div class="row justify-content-center align-items-center d-flex px-5">
+                    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        </div>
+        <div class="row justify-content-center align-items-center d-flex px-5">
+            <div class="count text-center">
+        <p class="mb-sm-0 pb-sm-0"><strong><span id="cnt">25</span>%</strong> <span class="blue-text">du questionnaire</span><br></p>
+        </div>
+        </div>
+        <div class="card-body show pt-0">
+        <h4 class="heading mb-4 pb-1"><br>Quel type de baccalauréat avez-vous obtenu?</h4>
+        <div class="radio-group row justify-content-between px-3">
+        <div class="card-block radio selected">
+        <div class="row justify-content-end d-flex px-3">
+        </div>
+        <div class="row justify-content-center d-flex">
+        <div class="pic"> <img src="calculating.png" class="pic-0"> </div>
+        <h5 class="mb-4">Scientifique</h5>
+        </div>
+        </div>
+        <div class="card-block radio">
+        <div class="row justify-content-end d-flex px-3">
+        
+        </div>
+        <div class="row justify-content-center d-flex">
+        <div class="pic"> <img src="book-stack.png" class="pic-0"> </div>
+        <h5 class="mb-4">&nbsp&nbspLittéraire&nbsp&nbsp</h5>
+        </div>
+        </div>
+        <div class="card-block radio">
+        <div class="row justify-content-end d-flex px-3">
+        
+        </div>
+        <div class="row justify-content-center d-flex">
+        <div class="pic"> <img src="analytics.png" class="pic-0"> </div>
+        <h5 class="mb-4">Economie et Sociale</h5>
+        </div>
+        </div>
+        <div class="card-block radio">
+            <div class="row justify-content-end d-flex px-3">
+            
+            </div>
+            <div class="row justify-content-center d-flex">
+            <div class="pic"> <img src="service.png" class="pic-0"> </div>
+            <h5 class="mb-4">&nbsp&nbspTechnique&nbsp&nbsp</h5>
+            </div>
+            </div>
+            <div class="card-block radio">
+                <div class="row justify-content-end d-flex px-3">
+                
+                </div>
+                <div class="row justify-content-center d-flex">
+                <div class="pic"> <img src="businessman.png" class="pic-0"> </div>
+                <h5 class="mb-4">Professionnel</h5>
+                </div>
+                </div>
+                <div class="card-block radio">
+                    <div class="row justify-content-end d-flex px-3">
+                    
+                    </div>
+                    <div class="row justify-content-center d-flex">
+                    <div class="pic"> <img src="project-management.png" class="pic-0"> </div>
+                    <h5 class="mb-4">&nbsp&nbsp&nbsp&nbspSTMG&nbsp&nbsp&nbsp&nbsp</h5>
+                    </div>
+                    </div>        
+        </div>
+        <div class="row justify-content-center"> <button class="btn btn-blue next mx-2" id="next1">Next</button> </div>
+        </div>
+        <div class="card-body pt-0">
+        <h4 class="heading mb-4 pb-1">Votre Parcours et Vos Préférences</h4></label>
+        <div class="form-group"> <label class="form-control-label">Quelle a été votre mention au baccalauréat? * :</label> <select id="mention" name="mention" class="form-control" onchange="validate1(1)">
+            <option value="">Sélectionnez une mention</option>
+            <option value="passable">Passable</option>
+            <option value="assez-bien">Assez-bien</option>
+            <option value="bien">Bien</option>
+            <option value="tres-bien">Très-bien</option>
+            <option value="honorable">Honorable</option>
+        </select> </div>
+        <div class="form-group"> <label class="form-control-label">Quel était votre tranche d'âge au moment de l'obtention votre bac? *
+            :</label>  <select id="age" name="age" class="form-control" onchange="validate1(2)">
+                <option value="">Sélectionnez une tranche d'âge</option>
+                <option value="12-17">12-17 ans</option>
+                <option value="18-21">18-21 ans</option>
+                <option value="22-25">22-25 ans</option>
+                <option value="plus-de-25">Plus de 25 ans</option>
+            </select> </div>
+        <div class="form-group"> <label class="form-control-label">Dans quelles matières  vous sentez-vous le plus compétent ? * :</label> 
+            <select id="matieres" name="matieres[]" class="form-control" multiple onchange="validate1(3)">
+                <option value="mathematiques">Mathématiques</option>
+                <option value="physique-chimie">Physique-chimie (PC)</option>
+                <option value="svt">Sciences de la vie et de la Terre (SVT)</option>
+                <option value="philosophie">Philosophie</option>
+                <option value="histoire-geographie">Histoire - Géographie</option>
+                <option value="art">Art</option>
+                <option value="francais">Français</option>
+                <option value="sciences-economiques-sociales">Sciences économiques et sociales</option>
+                <option value="eps">Éducation physique et sportive</option>
+                <option value="sciences-numeriques-technologie">Sciences numériques et technologie</option>
+                <option value="langues-etrangeres">Langues étrangères</option>
+                <option value="communication-redaction">Communication et rédaction</option>
+                <option value="sciences-politiques">Sciences politiques</option>
+                <option value="education-civique-morale">Education Civique et Morale</option>
+                <option value="anglais">Anglais</option>
+            </select> </div>
+            <div class="form-group">
+                <label class="form-control-label">Préfériez-vous des études de courte ou de longue durée ? * :</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="longues" name="duree_etudes" value="longues" onclick="validate1(4)">
+                  <label class="form-check-label" for="longues">Longues (>= master)</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="courtes" name="duree_etudes" value="courtes" onclick="validate1(4)">
+                  <label class="form-check-label" for="courtes">Courtes (< master)</label>
+                </div>
+              </div>
+        <div class="row justify-content-center"> <button class="btn btn-secondary prev mx-2">Back</button> <button class="btn btn-blue next mx-2" id="next2" onclick="validate1(0)">Next</button></div>
+        </div>
+        <div class="card-body pt-0">
+        <h4 class="heading mb-4 pb-1">Détails personnels</h4></label>
+        <div class="form-group"> <label class="form-control-label">Êtes-vous content de la filière que vous avez choisie ?</label> <select id="age" name="age" class="form-control" onchange="validate2(1)">
+            <option value="">Sélectionnez une reponse</option>
+            <option value="12-17">Oui</option>
+            <option value="18-21">Non</option>
+            <option value="22-25">Pas sur</option>
+        </select> </div>
+        <div class="form-group"> <label class="form-control-label">Quels secteurs professionnels suscitent votre intérêt ? * :</label> <input type="text" id="title" name="title" placeholder="" class="form-control" onblur="validate2(3)"> </div>
+        <div class="form-group"> <label class="form-control-label">Quel est votre pays de résidence? * :</label> <input type="text" id="desc" name="desc" placeholder="" class="form-control" onblur="validate2(4)"> </div>
+        <div class="form-group"> <label class="form-control-label">Quel est votre genre ? :</label>
+        <div class="select mb-3"> <select name="type-info" class="form-control">
+            <option value="">Sélectionnez votre genre</option>
+            <option>Masculin</option>
+        <option>Féminin</option>
+        <option>Autre</option>
+        </select> </div>
+        </div>
+        <div class="row justify-content-center"> <button class="btn btn-secondary prev mx-2">Back</button> <button class="btn btn-blue next mx-2" id="next3" onclick="validate2(0)">Next</button> </div>
+        </div>
+        <div class="card-body pt-0">
+        <h4 class="heading mb-4 pb-1">Résultat de l'Orientation</h4>
+        <p>Merci d'avoir répondu aux questions. Basé sur vos réponses, voici notre suggestion d'orientation :</p>
+        <div class="row justify-content-start px-3">
+        <p>Vous semblez avoir une forte affinité pour les matières scientifiques, telles que les mathématiques et la physique-chimie. De plus, votre préférence pour des études de courte durée suggère que vous pourriez être intéressé par des programmes axés sur des compétences techniques. Nous vous suggérons de considérer des domaines tels que l'informatique, l'ingénierie ou les sciences appliquées.</p>
+        </div>
+        <div class="row justify-content-center"> <img src="https://i.imgur.com/krsWHvd.gif" class="check"> </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div> 
+    <!-- Bootstrap JS and jQuery -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="custom.js"></script>
+
+</body>
+
+</html>
